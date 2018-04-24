@@ -1,4 +1,5 @@
 import javax.swing.*;
+import java.awt.*;
 
 public class SimpleGUI {
 
@@ -9,7 +10,7 @@ public class SimpleGUI {
 
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-        frame.getContentPane().add(button);
+        frame.getContentPane().add(BorderLayout.EAST, button);
 
         frame.setSize(300, 300);
         frame.setVisible(true);
